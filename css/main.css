@@ -30,7 +30,7 @@ p {
 }
 
 fieldset{
-    background-color: #9BE7F7;
+    background: linear-gradient(to bottom, #67d4ee 20%, #9be7f7);
     width: 450px;
     text-align: center;
     outline: none;
@@ -104,17 +104,21 @@ fieldset{
     background: #fadc3e;
     border: 2px transparent;
     color: #494c77;
+    transition: all 1s;
 }
 
 .menu nav ul li a.sesion:hover {
-    background: #f0d23d;
+    background: #f2a78c;
     text-decoration: none;
+    border-radius: 0px;
+    color: #f2f2f2;
 }
 
 .menu nav ul li a.link {
     text-transform: uppercase;
     list-style: none;
     margin: 10px;
+    transition: all 1s;
 }
 
 .menu nav ul li a.link:hover {
@@ -170,6 +174,15 @@ fieldset{
 }
 
 .titulo div input.campo {
+    width: 170px;
+    border: none;
+    border-bottom: 2px solid #494c77;
+    background-color: #fff;
+    margin-bottom: 20px;
+    transition: all 1s;
+}
+
+.titulo div input.campo:hover {
     width: 300px;
     border: none;
     border-bottom: 2px solid #494c77;
@@ -192,6 +205,7 @@ fieldset{
     overflow: hidden;
     border: 2px transparent;
     color: #fff;
+    transition: all 0.7s;
 }
 
 .titulo div input.boton:hover {
@@ -243,10 +257,16 @@ fieldset{
     border: 2px solid #494c77;
     border-radius: 20px;
     margin: 10px;
+    transition: all 1s;
 }
 
 .planes div:hover {
-    zoom: 110%;
+    width: 260px;
+    height: 260px;
+    background-color: #f2f2f2;
+    border: 2px solid #fadc3e;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 .planes div h2 {
@@ -348,7 +368,10 @@ fieldset{
     flex-wrap: wrap;
     background-color: #f2f2f2;
     padding: 20px;
-    grid-area: apps;
+}
+
+#apps div {
+    text-align: center;
 }
 
 #apps h4 {
@@ -385,6 +408,7 @@ fieldset{
     margin: 10px;
     color: #494c77;
     font-family: 'Roboto Mono', monospace;
+    transition: all 1s;
 }
 
 .footer div a:hover {
@@ -419,7 +443,7 @@ fieldset{
     width: 300px;
     border: none;
     border-bottom: 2px solid #494c77;
-    background-color: #9BE7F7;
+    background-color: transparent;
     color: #494c77;
     font-family: 'Roboto Mono', monospace;
     font-size: medium;
@@ -440,13 +464,13 @@ fieldset{
     background: #f2a78c;
     overflow: hidden;
     border: 2px transparent;
-    color: #fff;   
+    color: #fff;
+    transition: all 1s;   
 }
 
 .contacto input.enviar:hover {
-    background: #f1ad94;
-    border-color: #f1ad94   ;
-    color: #fff;
+    background: #f0d23d;
+    color: #494c77;
 }
 
 /*  LOGIN */
@@ -473,7 +497,7 @@ fieldset{
     border: none;
     border-bottom: 2px solid #494c77;
     margin: 8px;
-    background-color: #9BE7F7;
+    background-color: transparent;
     color: #494c77;
     font-family: 'Roboto Mono', monospace;
     font-size: medium;
@@ -495,17 +519,19 @@ fieldset{
     overflow: hidden;
     border: 2px transparent;
     color: #fff;
+    transition: all 1s;
 }
 
 .login input.ingresar:hover {
-    background: #f1ad94;
-    color: #fff;
+    background: #fadc3e;
+    color: #494c77;
 }
 
 .login input.registrarse {
     width: 150px;
     border: none;
     cursor: pointer;
+    transition: color 1s;
 }
 
 .login input.registrarse:hover {
@@ -525,7 +551,7 @@ fieldset{
 }
 
 .articulos input {
-    width: 300px;
+    width: 100px;
     border: none;
     border-bottom: 2px solid #494c77;
     margin: 8px;
@@ -533,6 +559,11 @@ fieldset{
     color: #494c77;
     font-family: 'Roboto Mono', monospace;
     font-size: medium;
+    transition: all 1s;
+}
+
+.articulos input:hover {
+    width: 300px;
 }
 
 #articulos-populares {
@@ -599,6 +630,7 @@ fieldset{
 .foto {
     width: 200px;
     height: auto;
+    transition: all 1s;
 }
 
 .nombre {
@@ -614,6 +646,7 @@ fieldset{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 1s;
 }
 
 
