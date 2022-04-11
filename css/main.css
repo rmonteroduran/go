@@ -104,14 +104,13 @@ fieldset{
     background: #fadc3e;
     border: 2px transparent;
     color: #494c77;
-    transition: all 1s;
 }
 
 .menu nav ul li a.sesion:hover {
-    background: #f2a78c;
+    background: #f0d23d;
     text-decoration: none;
     border-radius: 0px;
-    color: #f2f2f2;
+    color: #494c77;
 }
 
 .menu nav ul li a.link {
@@ -148,7 +147,7 @@ fieldset{
 }
 
 #inicio img {
-    width: 250px;
+    max-width: 250px;
     height: auto;
 }
 
