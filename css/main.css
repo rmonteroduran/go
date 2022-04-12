@@ -53,78 +53,49 @@ fieldset{
 /* HEADER */
 
 .menu {
-    position: sticky;
-    z-index: 100;
-    top: 0;
     background: #f2f2f2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: wrap;
-    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
     grid-area: header;
+} 
+
+.logo {
+    padding: 0.2rem;
 }
 
-.menu .logo {
-    padding: 0 16px;
-}
-
-.menu .logo img {
+.logo img {
     width: 50px;
     height: auto;
 }
 
-.menu nav {
-    display: flex;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10PX;
-    overflow: hidden;
-    display: flex;
-}
-
-.menu li a {
-    text-align: center;
-    font-size: 16px;
-    padding: 14px 16px;
+.mi-link {
     text-decoration: none;
+    color: #494c77;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0 20px;
+}
+
+.mi-link:hover {
+    color: #f0d23d;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.sesion {
+    text-transform: uppercase;
+    list-style: none;
+    margin: 10px;
+    background: #fadc3e;
+    border: 2px transparent;
     color: #494c77;
     font-family: 'Roboto Mono', monospace;
 }
 
-.menu nav ul li a.sesion {
-    text-transform: uppercase;
-    list-style: none;
-    margin: 10px;
-    font-weight: bold;
-    border-radius: 0px;
-    background: #fadc3e;
-    border: 2px transparent;
-    color: #494c77;
-}
-
-.menu nav ul li a.sesion:hover {
+.sesion:hover {
     background: #f0d23d;
     text-decoration: none;
     border-radius: 0px;
     color: #494c77;
 }
-
-.menu nav ul li a.link {
-    text-transform: uppercase;
-    list-style: none;
-    margin: 10px;
-    transition: all 1s;
-}
-
-.menu nav ul li a.link:hover {
-    text-decoration: underline;
-    font-family: 'Roboto Mono', monospace;
-}
-
 
 /* MAIN */
 
