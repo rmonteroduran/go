@@ -19,7 +19,7 @@ h3 {
     font-family: 'Roboto Mono', monospace;
 }
 
-h2, h4, h5 {
+h2, h4, h5, h6 {
     color: #494c77;
     font-family: 'Roboto Mono', monospace;
 }
@@ -72,7 +72,7 @@ fieldset{
     text-decoration: none;
     color: #494c77;
     font-family: 'Roboto Mono', monospace;
-    margin: 0 20px;
+    margin: 15px;
 }
 
 .mi-link:hover {
@@ -83,7 +83,7 @@ fieldset{
 .sesion {
     text-transform: uppercase;
     list-style: none;
-    margin: 10px;
+    margin: 15px;
     background: #fadc3e;
     border: 2px transparent;
     color: #494c77;
@@ -102,7 +102,7 @@ fieldset{
 .contenido {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
     grid-area: main;
 }
 
@@ -114,7 +114,7 @@ fieldset{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 #inicio img {
@@ -239,12 +239,14 @@ fieldset{
     margin: 10px;
 }
 
-.planes div h2 {
+.planes div h4 {
     margin: 10px;
+    color: #494c77;
 }
 
-.planes div h3 {
+.planes div h5 {
     margin: 10px;
+    color: #f2a78c;
 }
 
 .planes div p {
@@ -284,27 +286,26 @@ fieldset{
     padding: 50px;
 }
 
-#usuarios h1 {
-    margin: 20px 0px;
+#usuarios h6 {
+    color: #f2f2f2;
 }
 
 .comentarios {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 10px;
 }
 
 .comentarios div.comentarios-item {
-    margin: 10px;
-    width: 500px;
-    height: 200px;
+    padding: 20px;
     background-color:#494c77;
     border: 2px transparent;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 .comentarios div.comentarios-item p {
@@ -312,21 +313,26 @@ fieldset{
     font-size: small;
     color: #fff;
     font-style: italic;
+    padding: 10px;
+}
+
+.comentarios div.comentarios-item p.empresa {
+    font-size: small;
+    color: #fff;
+    padding: 0;
+    margin: 0;
 }
 
 .comentarios div.comentarios-item img {
     width: 75px;
     height: 75px;
     border-radius: 50px;
-    margin: 10px 0px;
+    margin: 10px;
 }
 
-.comentarios div h4 {
+.comentarios div h6 {
     color: #fff;
-}
-
-.comentarios div h5 {
-    color: #fff;
+    margin: 0;
 }
 
 /* APPS MOBILE */
@@ -344,7 +350,7 @@ fieldset{
     text-align: center;
 }
 
-#apps h4 {
+#apps p {
     margin: 20px;
 }
 
@@ -520,6 +526,10 @@ fieldset{
     margin-top: 20px;
 }
 
+.articulos h4 {
+    color: #f2a78c;
+}
+
 .articulos input {
     width: 100px;
     border: none;
@@ -544,7 +554,7 @@ fieldset{
     justify-items: stretch;
     align-items: stretch;
     max-width: 700px;
-    padding: 40px;
+    padding: 20px;
 }
 
 #articulos-populares div {
@@ -552,6 +562,10 @@ fieldset{
     justify-content: start;
     align-items: center;
     gap: 10px;
+}
+
+#articulos-populares div p {
+    margin: 0;
 }
 
 /* ACERCA DE */
@@ -633,7 +647,89 @@ fieldset{
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 575px) {
+    .navbar-nav.me-auto.mb-2.mb-sm-0 {
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .d-flex {
+        justify-content: center;
+        align-items: center;
+    }
+    .sesion {
+        text-decoration: none;
+        color: #494c77;
+        font-family: 'Roboto Mono', monospace;
+        text-transform: uppercase;
+        list-style: none;
+        margin: 0px;
+        background: #fadc3e;
+        border: 0 transparent;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 10;
+    }
+    .sesion:hover {
+        color: #494c77;
+        background: #f0d23d;
+        font-family: 'Roboto Mono', monospace;
+    }
+    header nav ul li a.link {
+        display: none;
+    }
+    .titulo div input.campo {
+        display: none;
+    }
+    main {
+        gap: 50px;
+    }
+    #inicio {
+        margin-top: 50px;
+    }
+    #inicio img {
+        width: 200px;
+        height: auto;
+    }
+    #subinicio img {
+        width: 400px;
+        height: auto;
+    }
+    .comentarios div.comentarios-item {
+        flex-direction: column;
+        height: 300px;
+        width: 300PX;
+    }
+    .login {
+        height: 60vh;
+    }
+    .login div img {
+        display: none;
+    }
+    .contacto {
+        height: 60vh;
+    }
+    .contacto div img {
+        display: none;
+    }
+    .acerca div img {
+        display: none;
+    }
+    #articulos-populares {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #equipo-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
     header nav ul li a.link {
         display: none;
     }
