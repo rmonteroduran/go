@@ -1,0 +1,28 @@
+/* APPS */
+
+#apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#apps div {
+    text-align: center;
+}
+
+#apps p {
+    margin: 20px;
+}
+
+.tels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tels img {
+    width: 150px;
+    padding: 10px;
+}

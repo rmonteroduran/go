@@ -1,0 +1,43 @@
+/* HEADER */
+
+header {
+    .menu {
+        background: $colorGris;
+        padding-top: 0;
+        padding-bottom: 0;
+        grid-area: header;
+        .logo {
+            padding: 0.2rem;
+            img {
+                width: 50px;
+                height: auto;
+            }
+        }
+        .mi-link {
+            text-decoration: none;
+            color: $colorVioleta;
+            font-family: 'Roboto Mono', monospace;
+            margin: 15px;
+            &:hover {
+                color: $colorAmarillo;
+                font-family: 'Roboto Mono', monospace;
+            }
+        }
+        .sesion {
+            text-transform: uppercase;
+            list-style: none;
+            margin: 15px;
+            background: $colorAmarillo;
+            border: 2px transparent;
+            color: #494c77;
+            font-family: 'Roboto Mono', monospace;
+            &:hover {
+                background: $colorAmarilloOscuro;
+                text-decoration: none;
+                border-radius: 0px;
+                color: $colorVioleta;
+            }
+        }
+    } 
+}
+
