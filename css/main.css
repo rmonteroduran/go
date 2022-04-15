@@ -408,6 +408,10 @@ fieldset{
     font-family: 'Roboto Mono', monospace;
 }
 
+.copy {
+    font-size: x-large;
+}
+
 /* CONTACTO */
 
 .contacto {
