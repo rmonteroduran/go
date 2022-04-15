@@ -8,6 +8,10 @@
     box-sizing:border-box;
 }
 
+body {
+    background: linear-gradient(to bottom, #f2f2f2 10%, #f1d3c6 40%, #f2f2f2 90%);
+}
+
 h1  {
     font-size: xx-large;
     color: #494c77;
@@ -30,7 +34,7 @@ p {
 }
 
 fieldset{
-    background: linear-gradient(to bottom, #67d4ee 20%, #9be7f7);
+    background: linear-gradient(to bottom, #9ae0f2 20%, #9ae0f2 80%);
     width: 450px;
     text-align: center;
     outline: none;
@@ -114,7 +118,7 @@ fieldset{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #inicio img {
@@ -146,8 +150,8 @@ fieldset{
 .titulo div input.campo {
     width: 170px;
     border: none;
+    background-color: transparent;
     border-bottom: 2px solid #494c77;
-    background-color: #fff;
     margin-bottom: 20px;
     transition: all 1s;
 }
@@ -155,8 +159,8 @@ fieldset{
 .titulo div input.campo:hover {
     width: 300px;
     border: none;
+    background-color: transparent;
     border-bottom: 2px solid #494c77;
-    background-color: #fff;
     margin-bottom: 20px;
 }
 
@@ -179,27 +183,34 @@ fieldset{
 }
 
 .titulo div input.boton:hover {
-    background: #fff;
+    background-color: transparent;
     color: #f2a78c;
 }
 
 #subinicio {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
 }
 
-#subinicio div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#subinicio img {
+    width: 500px;
+    height: auto;
 }
 
-#subinicio p {
+#subinicio.titulo div p {
     padding: 20px;
+}
+
+.subinicio-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* PRECIOS */
@@ -207,6 +218,10 @@ fieldset{
 #precios {
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #precios h1 {
@@ -223,7 +238,6 @@ fieldset{
 .planes div {
     width: 250px;
     height: 250px;
-    background-color: #f2f2f2;
     border: 2px solid #494c77;
     border-radius: 20px;
     margin: 10px;
@@ -233,7 +247,6 @@ fieldset{
 .planes div:hover {
     width: 260px;
     height: 260px;
-    background-color: #f2f2f2;
     border: 2px solid #fadc3e;
     border-radius: 20px;
     margin: 10px;
@@ -284,6 +297,10 @@ fieldset{
 #usuarios {
     text-align: center;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #usuarios h6 {
@@ -342,7 +359,6 @@ fieldset{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #f2f2f2;
     padding: 20px;
 }
 
@@ -479,6 +495,10 @@ fieldset{
     font-size: medium;
 }
 
+.login input::placeholder {
+    color: #717171;
+}
+
 .login input.ingresar {
     min-width: 130px;
     height: 40px;
@@ -527,7 +547,7 @@ fieldset{
 }
 
 .articulos h4 {
-    color: #f2a78c;
+    color: #494c77;
 }
 
 .articulos input {
@@ -535,7 +555,7 @@ fieldset{
     border: none;
     border-bottom: 2px solid #494c77;
     margin: 8px;
-    background-color: #fff;
+    background-color: transparent;
     color: #494c77;
     font-family: 'Roboto Mono', monospace;
     font-size: medium;
@@ -633,7 +653,6 @@ fieldset{
     transition: all 1s;
 }
 
-
 .item:hover .foto {
     opacity: 30%;
     filter: grayscale(1);
@@ -644,6 +663,137 @@ fieldset{
     opacity: 1;
 }
 
+/* FLECHAS DESPLAZAMIENTO */
+
+.round {
+    position: relative;
+    border: 0 solid #494c77;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.round span {
+    z-index: 999;
+    height: 3px;
+    margin: 1px;
+    width: 30px;
+    background: #494c77;
+    transition: 0.4s ease;
+}
+
+.round span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+.round span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+.round span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+.round span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-225deg);
+}
+
+.round-rv {
+    position: relative;
+    border: 0 solid #494c77;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.round-rv span {
+    z-index: 999;
+    height: 3px;
+    margin: 1px;
+    width: 30px;
+    background: #494c77;
+    transition: 0.4s ease;
+}
+
+.round-rv span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(135deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+.round-rv span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-135deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+.round-rv span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(135deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+.round-rv span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-135deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round-rv:hover span:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+.round-rv:hover span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.round-rv:hover span:nth-child(3) {
+    transform: rotate(315deg);
+}
+
+.round-rv:hover span:nth-child(4) {
+    transform: rotate(-315deg);
+}
 
 /* RESPONSIVE */
 
@@ -692,7 +842,7 @@ fieldset{
         height: auto;
     }
     #subinicio img {
-        width: 400px;
+        width: 300px;
         height: auto;
     }
     .comentarios div.comentarios-item {
