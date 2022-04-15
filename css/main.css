@@ -552,7 +552,7 @@ header .menu .sesion:hover {
   margin: 20px;
 }
 
-.tels {
+#apps .tels {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,7 +564,7 @@ header .menu .sesion:hover {
           align-items: center;
 }
 
-.tels img {
+#apps .tels img {
   width: 150px;
   padding: 10px;
 }
@@ -606,7 +606,7 @@ header .menu .sesion:hover {
   font-family: 'Roboto Mono', monospace;
 }
 
-.copy {
+.footer .copy {
   font-size: x-large;
 }
 
@@ -623,10 +623,12 @@ header .menu .sesion:hover {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 50px;
 }
 
-.contacto div {
-  margin: 10px 0;
+.contacto img {
+  width: 450px;
+  height: auto;
 }
 
 .contacto fieldset {
@@ -648,7 +650,7 @@ header .menu .sesion:hover {
   margin-top: 20px;
 }
 
-.contacto input {
+.contacto fieldset input {
   width: 300px;
   border: none;
   border-bottom: 2px solid #494c77;
@@ -656,9 +658,10 @@ header .menu .sesion:hover {
   color: #494c77;
   font-family: 'Roboto Mono', monospace;
   font-size: medium;
+  margin: 10px 0;
 }
 
-.contacto input.enviar {
+.contacto fieldset input.enviar {
   min-width: 130px;
   height: 40px;
   width: 100px;
@@ -678,7 +681,7 @@ header .menu .sesion:hover {
   transition: all 1s;
 }
 
-.contacto input.enviar:hover {
+.contacto fieldset input.enviar:hover {
   background: #f0d23d;
   color: #494c77;
 }
@@ -860,9 +863,9 @@ header .menu .sesion:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -907,26 +910,6 @@ header .menu .sesion:hover {
   padding: 40px;
 }
 
-.item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  height: 200px;
-  width: auto;
-  text-align: center;
-}
-
 .foto {
   width: 200px;
   height: auto;
@@ -958,6 +941,26 @@ header .menu .sesion:hover {
           align-items: center;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 200px;
+  width: auto;
+  text-align: center;
 }
 
 .item:hover .foto {

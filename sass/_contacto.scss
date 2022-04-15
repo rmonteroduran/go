@@ -5,52 +5,54 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 50px;
+    img {
+        width: 450px;
+        height: auto;
+    }
+    fieldset {
+        width: 350px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        input {
+            width: 300px;
+            border: none;
+            border-bottom: 2px solid #494c77;
+            background-color: transparent;
+            color: #494c77;
+            font-family: 'Roboto Mono', monospace;
+            font-size: medium;
+            margin: 10px 0;
+            &.enviar {
+                min-width: 130px;
+                height: 40px;
+                width: 100px;
+                color: #fff;
+                padding: 5px 10px;
+                font-weight: bold;
+                cursor: pointer;
+                display: inline-block;
+                outline: none;
+                border-radius: 30px;
+                z-index: 0;
+                background: #f2a78c;
+                overflow: hidden;
+                border: 2px transparent;
+                color: #fff;
+                transition: all 1s;   
+                &:hover {
+                    background: #f0d23d;
+                    color: #494c77;
+                }
+            }
+        }
+    }
 }
 
-.contacto div {
-    margin: 10px 0;
-}
 
-.contacto fieldset {
-    width: 350px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
 
-.contacto input {
-    width: 300px;
-    border: none;
-    border-bottom: 2px solid #494c77;
-    background-color: transparent;
-    color: #494c77;
-    font-family: 'Roboto Mono', monospace;
-    font-size: medium;
-}
 
-.contacto input.enviar {
-    min-width: 130px;
-    height: 40px;
-    width: 100px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    display: inline-block;
-    outline: none;
-    border-radius: 30px;
-    z-index: 0;
-    background: #f2a78c;
-    overflow: hidden;
-    border: 2px transparent;
-    color: #fff;
-    transition: all 1s;   
-}
-
-.contacto input.enviar:hover {
-    background: #f0d23d;
-    color: #494c77;
-}

@@ -2,15 +2,14 @@
 
 .acerca {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-align: justify;
-}
-
-.acerca div {
-    max-width: 600px;
-    padding: 40px;
+    div {
+        max-width: 600px;
+        padding: 40px;
+    }
 }
 
 .equipo {
@@ -28,17 +27,6 @@
     align-items: stretch;
     max-width: 700px;
     padding: 40px;
-}
-
-.item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 200px;
-    width: auto;
-    text-align: center;
 }
 
 .foto {
@@ -63,12 +51,22 @@
     transition: all 1s;
 }
 
-.item:hover .foto {
-    opacity: 30%;
-    filter: grayscale(1);
-}
-
-.item:hover .nombre {
-    visibility: visible;
-    opacity: 1;
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 200px;
+    width: auto;
+    text-align: center;
+    &:hover .foto {
+        opacity: 30%;
+        filter: grayscale(1);
+    }
+    
+    &:hover .nombre {
+        visibility: visible;
+        opacity: 1;
+    }
 }
