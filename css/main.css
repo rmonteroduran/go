@@ -1024,6 +1024,9 @@ header .menu .sesion:hover {
   main {
     gap: 50px;
   }
+  .contenido {
+    gap: 0;
+  }
   #inicio {
     margin-top: 50px;
   }
@@ -1051,6 +1054,7 @@ header .menu .sesion:hover {
   }
   .contacto {
     height: 60vh;
+    gap: 0;
   }
   .contacto div img {
     display: none;
@@ -1125,6 +1129,9 @@ header .menu .sesion:hover {
   main {
     gap: 50px;
   }
+  .contenido {
+    gap: 0;
+  }
   #inicio {
     margin-top: 50px;
   }
@@ -1152,6 +1159,7 @@ header .menu .sesion:hover {
   }
   .contacto {
     height: 60vh;
+    gap: 0;
   }
   .contacto div img {
     display: none;

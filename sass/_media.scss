@@ -37,6 +37,9 @@
     main {
         gap: 50px;
     }
+    .contenido {
+        gap: 0;
+    }
     #inicio {
         margin-top: 50px;
     }
@@ -61,6 +64,7 @@
     }
     .contacto {
         height: 60vh;
+        gap: 0;
     }
     .contacto div img {
         display: none;
@@ -110,6 +114,9 @@
     main {
         gap: 50px;
     }
+    .contenido {
+        gap: 0;
+    }
     #inicio {
         margin-top: 50px;
     }
@@ -134,6 +141,7 @@
     }
     .contacto {
         height: 60vh;
+        gap: 0;
     }
     .contacto div img {
         display: none;
