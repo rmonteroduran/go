@@ -895,29 +895,49 @@ header .menu .sesion:hover {
           align-items: center;
 }
 
-#equipo-grid {
+.equipo #equipo-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (200px)[3];
       grid-template-columns: repeat(3, 200px);
-  -ms-grid-rows: (200px)[2];
-      grid-template-rows: repeat(2, 200px);
+  -ms-grid-rows: (200px)[3];
+      grid-template-rows: repeat(3, 200px);
   justify-items: stretch;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
   max-width: 700px;
-  padding: 40px;
+  padding-top: 20px;
 }
 
-.foto {
+.equipo #equipo-grid .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 200px;
+  width: auto;
+  text-align: center;
+}
+
+.equipo #equipo-grid .item .foto {
   width: 200px;
   height: auto;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.nombre {
+.equipo #equipo-grid .item .nombre {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -943,35 +963,19 @@ header .menu .sesion:hover {
   transition: all 1s;
 }
 
-.item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  height: 200px;
-  width: auto;
-  text-align: center;
-}
-
-.item:hover .foto {
+.equipo #equipo-grid .item:hover .foto {
   opacity: 30%;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
 
-.item:hover .nombre {
+.equipo #equipo-grid .item:hover .nombre {
   visibility: visible;
   opacity: 1;
+}
+
+.equipo #equipo-grid .nombre-mobile {
+  display: none;
 }
 
 /* RESPONSIVE */
@@ -1069,7 +1073,7 @@ header .menu .sesion:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  #equipo-grid {
+  .equipo #equipo-grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1083,6 +1087,31 @@ header .menu .sesion:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .equipo #equipo-grid .nombre-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .equipo #equipo-grid .item:hover .foto {
+    opacity: 100%;
+    -webkit-filter: none;
+            filter: none;
+  }
+  .equipo #equipo-grid .item:hover .nombre {
+    visibility: hidden;
+    opacity: none;
   }
 }
 
@@ -1145,7 +1174,7 @@ header .menu .sesion:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  #equipo-grid {
+  .equipo #equipo-grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1159,6 +1188,31 @@ header .menu .sesion:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .equipo #equipo-grid .nombre-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .equipo #equipo-grid .item:hover .foto {
+    opacity: 100%;
+    -webkit-filter: none;
+            filter: none;
+  }
+  .equipo #equipo-grid .item:hover .nombre {
+    visibility: hidden;
+    opacity: none;
   }
 }
 

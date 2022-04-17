@@ -74,11 +74,29 @@
         justify-content: center;
         align-items: center;
     }
-    #equipo-grid {
+    .equipo #equipo-grid {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .nombre-mobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .item {
+            &:hover .foto {
+                opacity: 100%;
+                filter: none;
+            }
+            
+            &:hover .nombre {
+                visibility: hidden;
+                opacity: none;
+            }
+        }
     }
 }
 
@@ -129,10 +147,28 @@
         justify-content: center;
         align-items: center;
     }
-    #equipo-grid {
+    .equipo #equipo-grid {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .nombre-mobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .item {
+            &:hover .foto {
+                opacity: 100%;
+                filter: none;
+            }
+            
+            &:hover .nombre {
+                visibility: hidden;
+                opacity: none;
+            }
+        }
     }
 }

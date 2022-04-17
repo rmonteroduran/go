@@ -17,56 +17,57 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#equipo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(2, 200px);
-    justify-items: stretch;
-    align-items: stretch;
-    max-width: 700px;
-    padding: 40px;
-}
-
-.foto {
-    width: 200px;
-    height: auto;
-    transition: all 1s;
-}
-
-.nombre {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #494c77;
-    visibility: hidden;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 1s;
-}
-
-.item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 200px;
-    width: auto;
-    text-align: center;
-    &:hover .foto {
-        opacity: 30%;
-        filter: grayscale(1);
+    #equipo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(3, 200px);
+        justify-items: stretch;
+        align-items: stretch;
+        max-width: 700px;
+        padding-top: 20px;
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 200px;
+            width: auto;
+            text-align: center;
+            .foto {
+                width: 200px;
+                height: auto;
+                transition: all 1s;
+            }
+            .nombre {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                color: #494c77;
+                visibility: hidden;
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: all 1s;
+            }
+            &:hover .foto {
+                opacity: 30%;
+                filter: grayscale(1);
+            }
+            
+            &:hover .nombre {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        .nombre-mobile {
+            display: none;
+        }
     }
-    
-    &:hover .nombre {
-        visibility: visible;
-        opacity: 1;
-    }
 }
+
+
