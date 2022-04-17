@@ -22,11 +22,11 @@
         margin: 0;
         margin-bottom: 10px;
         padding: 10;
-    }
-    .sesion:hover {
-        color: #494c77;
-        background: #f0d23d;
-        font-family: 'Roboto Mono', monospace;
+        &:hover {
+            color: #494c77;
+            background: #f0d23d;
+            font-family: 'Roboto Mono', monospace;
+        }
     }
     header nav ul li a.link {
         display: none;
@@ -42,32 +42,32 @@
     }
     #inicio {
         margin-top: 50px;
-    }
-    #inicio img {
-        width: 200px;
-        height: auto;
+        img {
+            width: 200px;
+            height: auto;
+        }
     }
     #subinicio .subinicio-titulo div img {
-        width: 300px;
+        width: 250px;
         height: auto;
     }
     .comentarios div.comentarios-item {
         flex-direction: column;
-        height: 300px;
-        width: 300PX;
+        width: 250px;
+        height: auto;
     }
     .login {
         height: 60vh;
-    }
-    .login div img {
-        display: none;
+        div img {
+            display: none;
+        }
     }
     .contacto {
         height: 60vh;
         gap: 0;
-    }
-    .contacto div img {
-        display: none;
+        div img {
+            display: none;
+        }
     }
     .acerca div img {
         display: none;
@@ -119,10 +119,10 @@
     }
     #inicio {
         margin-top: 50px;
-    }
-    #inicio img {
-        width: 200px;
-        height: auto;
+        img {
+            width: 250px;
+            height: auto;
+        }
     }
     #subinicio .subinicio-titulo div img {
         width: 400px;
@@ -135,16 +135,16 @@
     }
     .login {
         height: 60vh;
-    }
-    .login div img {
-        display: none;
+        div img {
+            display: none;
+        }
     }
     .contacto {
         height: 60vh;
         gap: 0;
-    }
-    .contacto div img {
-        display: none;
+        div img {
+            display: none;
+        }
     }
     .acerca div img {
         display: none;

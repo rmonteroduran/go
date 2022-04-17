@@ -1035,7 +1035,7 @@ header .menu .sesion:hover {
     height: auto;
   }
   #subinicio .subinicio-titulo div img {
-    width: 300px;
+    width: 250px;
     height: auto;
   }
   .comentarios div.comentarios-item {
@@ -1043,8 +1043,8 @@ header .menu .sesion:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 300px;
-    width: 300PX;
+    width: 250px;
+    height: auto;
   }
   .login {
     height: 60vh;
@@ -1136,7 +1136,7 @@ header .menu .sesion:hover {
     margin-top: 50px;
   }
   #inicio img {
-    width: 200px;
+    width: 250px;
     height: auto;
   }
   #subinicio .subinicio-titulo div img {
