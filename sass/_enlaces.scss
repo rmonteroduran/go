@@ -1,0 +1,18 @@
+#enlaces {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    div a {
+        text-decoration: underline;
+        margin: 0 20px;
+        color: map-get($colores, Violeta);
+        font-family: $tipografia;
+        transition: all 1s;
+        &:hover {
+            color: #b4acb4;
+            font-family: $tipografia;
+        }
+    }
+}

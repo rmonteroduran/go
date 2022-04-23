@@ -9,16 +9,16 @@
     gap: 40px;
     margin-top: 20px;
     h4 {
-        color: #494c77;
+        color: map-get($colores, Violeta);
     }
     input {
         width: 100px;
         border: none;
-        border-bottom: 2px solid #494c77;
+        border-bottom: 2px solid map-get($colores, Violeta);
         margin: 8px;
         background-color: transparent;
-        color: #494c77;
-        font-family: 'Roboto Mono', monospace;
+        color: map-get($colores, Violeta);
+        font-family: $tipografia;
         font-size: medium;
         transition: all 1s;
         &:hover {

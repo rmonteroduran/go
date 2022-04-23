@@ -3,8 +3,23 @@
 .contenido {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     grid-area: main;
+}
+
+@mixin btn {
+    min-width: 130px;
+    height: 40px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    border-radius: 30px;
+    z-index: 0;
+    overflow: hidden;
+    border: 2px transparent;
+    transition: all 0.7s;
 }
 
 /* INICIO */
@@ -34,43 +49,31 @@
         }
         div {
             input {
-                font-family: 'Roboto Mono', monospace;
+                font-family: $tipografia;
                 font-size: medium;
                 margin-right: 20px;
                 &.campo {
                     width: 170px;
                     border: none;
                     background-color: transparent;
-                    border-bottom: 2px solid #494c77;
+                    border-bottom: 2px solid map-get($colores, Violeta);
                     margin-bottom: 20px;
                     transition: all 1s;
                     &:hover {
                         width: 300px;
                         border: none;
                         background-color: transparent;
-                        border-bottom: 2px solid #494c77;
+                        border-bottom: 2px solid map-get($colores, Violeta);
                         margin-bottom: 20px;
                     }
                 }
                 &.boton {
-                    min-width: 130px;
-                    height: 40px;
+                    @include btn;
+                    background: map-get($colores, Salmon);
                     color: #fff;
-                    padding: 5px 10px;
-                    font-weight: bold;
-                    cursor: pointer;
-                    display: inline-block;
-                    outline: none;
-                    border-radius: 30px;
-                    z-index: 0;
-                    background: #f2a78c;
-                    overflow: hidden;
-                    border: 2px transparent;
-                    color: #fff;
-                    transition: all 0.7s;
                     &:hover {
                         background-color: transparent;
-                        color: #f2a78c;
+                        color: map-get($colores, Salmon);
                     }
                 }
             }
@@ -126,24 +129,25 @@
         div {
             width: 250px;
             height: 250px;
-            border: 2px solid #494c77;
+            border: 2px solid map-get($colores, Violeta);
             border-radius: 20px;
             margin: 10px;
             transition: all 1s;
+            background-color: map-get($colores, Gris);
             &:hover {
                 width: 260px;
                 height: 260px;
-                border: 2px solid #fadc3e;
+                border: 2px solid map-get($colores, Amarillo);
                 border-radius: 20px;
                 margin: 10px;
             }
             h4 {
                 margin: 10px;
-                color: #494c77;
+                color: map-get($colores, Violeta);
             }
             h5 {
                 margin: 10px;
-                color: #f2a78c;
+                color: map-get($colores, Salmon);
             }
             p {
                 height: 70px;
@@ -152,25 +156,14 @@
             }
         }
         input {
-            min-width: 130px;
-            height: 40px;
-            width: 150px;
-            padding: 5px 10px;
-            font-weight: bold;
-            cursor: pointer;
-            display: inline-block;
-            outline: none;
-            border-radius: 30px;
-            z-index: 0;
-            background: #fadc3e;
-            overflow: hidden;
-            border: 2px transparent;
-            color: #242c5c;
+            @include btn;
+            background: map-get($colores, Amarillo);
+            color: map-get($colores, VioletaOscuro);
             margin: 20px;
-            font-family: 'Roboto Mono', monospace;
+            font-family: $tipografia;
             &:hover {
-                background: #f0d23d;
-                color: #242c5c;   
+                background: map-get($colores, AmarilloOscuro);
+                color: map-get($colores, VioletaOscuro); 
             }
         }
     }
@@ -193,7 +186,7 @@
     }
     .comentarios-item {
         padding: 20px;
-        background-color:#494c77;
+        background-color: map-get($colores, Violeta);
         border: 2px transparent;
         border-radius: 20px;
         display: flex;
@@ -230,7 +223,7 @@
 
 .round {
     position: relative;
-    border: 0 solid $colorVioleta;
+    border: 0 solid map-get($colores, Violeta);
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -239,7 +232,7 @@
         height: 3px;
         margin: 1px;
         width: 30px;
-        background: $colorVioleta;
+        background: map-get($colores, Violeta);
         transition: 0.4s ease;
         &:first-child {
             display: block;
@@ -289,45 +282,19 @@
 }
 
 .round-rv {
-    position: relative;
-    border: 0 solid $colorVioleta;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
+    @extend .round;
     span {
-        z-index: 999;
-        height: 3px;
-        margin: 1px;
-        width: 30px;
-        background: $colorVioleta;
-        transition: 0.4s ease;
         &:first-child {
-            display: block;
-            position: absolute;
             transform: rotate(135deg);
-            left: 25%;
-            bottom: 35%;
         }
         &:nth-child(2) {
-            display: block;
-            position: absolute;
             transform: rotate(-135deg);
-            left: 45%;
-            bottom: 35%;
         }
         &:nth-child(3) {
-            display: block;
-            position: absolute;
             transform: rotate(135deg);
-            left: 25%;
-            bottom: 54%;
         }
         &:nth-child(4) {
-            display: block;
-            position: absolute;
             transform: rotate(-135deg);
-            left: 45%;
-            bottom: 54%;
         }
     }
     &:hover {

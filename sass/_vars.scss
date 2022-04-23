@@ -1,8 +1,14 @@
 /* VARIABLES */
 
-$colorGris: #f2f2f2;
-$colorAmarillo: #fadc3e;
-$colorAmarilloOscuro: #f0d23d;
-$colorVioleta: #494c77;
-$colorVioletaOscuro: #242c5c;
-$colorSalmon: #f2a78c;
+/* COLORES */
+$colores: (
+    Gris: #f2f2f2,
+    Amarillo: #fadc3e,
+    AmarilloOscuro: #f0d23d,
+    Violeta: #494c77,
+    VioletaOscuro: #242c5c,
+    Salmon: #f2a78c,
+);
+
+/* TIPOGRAFIA */
+$tipografia: 'Roboto Mono', monospace;

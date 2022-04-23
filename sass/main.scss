@@ -4,6 +4,7 @@
 @import 'header';
 @import 'index';
 @import 'apps';
+@import 'enlaces';
 @import 'footer';
 @import 'contacto';
 @import 'login';
@@ -27,23 +28,23 @@ body {
 
 h1  {
     font-size: xx-large;
-    color: $colorVioleta;
-    font-family: 'Roboto Mono', monospace;
+    color: map-get($colores, Violeta);
+    font-family: $tipografia;
 }
 
 h3 {
-    color: $colorSalmon;
-    font-family: 'Roboto Mono', monospace;
+    color: map-get($colores, Salmon);
+    font-family: $tipografia;
 }
 
 h2, h4, h5, h6 {
-    color: $colorVioleta;
-    font-family: 'Roboto Mono', monospace;
+    color: map-get($colores, Violeta);
+    font-family: $tipografia;
 }
 
 p {
-    color: $colorVioletaOscuro;
-    font-family: 'Roboto Mono', monospace;
+    color: map-get($colores, VioletaOscuro);
+    font-family: $tipografia;
 }
 
 fieldset{
@@ -53,8 +54,8 @@ fieldset{
     outline: none;
     border-radius: 30px;
     border: 2px transparent;
-    color: $colorGris;
-    font-family: 'Roboto Mono', monospace;
+    color: map-get($colores, Gris);
+    font-family: $tipografia;
 }
 
 #grid-area { /* definicion de layout */
@@ -64,6 +65,13 @@ fieldset{
     grid-template-areas:
     "header"
     "main"
-    "footer";
+    "footer"
+    "enlaces";
 }
+
+.titular {
+    text-align: center;
+    padding: 20px;
+}
+
 

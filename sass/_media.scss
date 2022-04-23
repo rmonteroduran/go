@@ -12,20 +12,20 @@
     }
     .sesion {
         text-decoration: none;
-        color: #494c77;
-        font-family: 'Roboto Mono', monospace;
+        color: map-get($colores, Violeta);
+        font-family: $tipografia;
         text-transform: uppercase;
         list-style: none;
         margin: 0px;
-        background: #fadc3e;
+        background: map-get($colores, Amarillo);
         border: 0 transparent;
         margin: 0;
         margin-bottom: 10px;
-        padding: 10;
+        padding: 10px;
         &:hover {
-            color: #494c77;
-            background: #f0d23d;
-            font-family: 'Roboto Mono', monospace;
+            color: map-get($colores, Violeta);;
+            background: map-get($colores, AmarilloOscuro);;
+            font-family: $tipografia;
         }
     }
     header nav ul li a.link {
@@ -100,6 +100,15 @@
                 visibility: hidden;
                 opacity: none;
             }
+        }
+    }
+    #enlaces {
+        margin: 20px 0;
+    }
+    .derechos {
+        flex-direction: column;
+        .redes {
+            margin-bottom: 20px;
         }
     }
 }
@@ -177,6 +186,15 @@
                 visibility: hidden;
                 opacity: none;
             }
+        }
+    }
+    #enlaces {
+        margin: 20px 0;
+    }
+    .derechos {
+        flex-direction: column;
+        .redes {
+            margin-bottom: 20px;
         }
     }
 }

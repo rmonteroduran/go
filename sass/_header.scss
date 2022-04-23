@@ -2,7 +2,7 @@
 
 header {
     .menu {
-        background: $colorGris;
+        background: map-get($colores, Gris);
         padding-top: 0;
         padding-bottom: 0;
         grid-area: header;
@@ -15,29 +15,27 @@ header {
         }
         .mi-link {
             text-decoration: none;
-            color: $colorVioleta;
-            font-family: 'Roboto Mono', monospace;
+            color: map-get($colores, Violeta);
+            font-family: $tipografia;
             margin: 15px;
             &:hover {
-                color: $colorAmarillo;
-                font-family: 'Roboto Mono', monospace;
+                color: map-get($colores, Amarillo);
             }
         }
         .sesion {
             text-transform: uppercase;
             list-style: none;
             margin: 15px;
-            background: $colorAmarillo;
+            background: map-get($colores, Amarillo);
             border: 2px transparent;
-            color: #494c77;
-            font-family: 'Roboto Mono', monospace;
+            color: map-get($colores, Violeta);
+            font-family: $tipografia;
             &:hover {
-                background: $colorAmarilloOscuro;
+                background: map-get($colores, AmarilloOscuro);
                 text-decoration: none;
                 border-radius: 0px;
-                color: $colorVioleta;
+                color: map-get($colores, Violeta);
             }
         }
     } 
 }
-

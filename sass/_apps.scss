@@ -1,11 +1,9 @@
 /* APPS */
-
 #apps {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
     div {
         text-align: center;
     }
@@ -22,5 +20,7 @@
         }
     }
 }
+
+
 
 

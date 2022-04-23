@@ -1,28 +1,36 @@
 /* FOOTER */
 
 .footer {
-    background-color: #fadc3e;
-    color: #494c77;
+    background-color: map-get($colores, Amarillo);
+    color: map-get($colores, Violeta);
     text-align: center;
-    height: 100px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-top: 10px;
     grid-area: footer;
-    div a {
-        text-decoration: underline;
-        margin: 10px;
-        color: #494c77;
-        font-family: 'Roboto Mono', monospace;
-        transition: all 1s;
-        &:hover {
-            color: #b4acb4;
-            font-family: 'Roboto Mono', monospace;
+    .derechos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 40px;
+        .redes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            a {
+                color: map-get($colores, Violeta);
+                i {
+                    font-size: x-large;
+                }
+            }
         }
-    }
-    .copy {
-        font-size: x-large;
+        .copy {
+            font-size: x-large;
+        }
     }
 }
 
