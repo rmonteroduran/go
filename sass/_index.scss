@@ -3,7 +3,7 @@
 .contenido {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 0;
     grid-area: main;
 }
 
@@ -88,6 +88,7 @@
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    margin-top: 50px;
     .subinicio-titulo {
         display: flex;
         justify-content: space-evenly;
@@ -113,13 +114,17 @@
 
 #precios {
     text-align: center;
-    padding: 20px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: map-get($colores, Amarillo);
     h1 {
         margin: 20px 0px;
+    }
+    .amarillo {
+        background-color: map-get($colores, Amarillo);
     }
     .planes {
         text-align: center;
@@ -137,7 +142,7 @@
             &:hover {
                 width: 260px;
                 height: 260px;
-                border: 2px solid map-get($colores, Amarillo);
+                border: 2px solid map-get($colores, VioletaOscuro);
                 border-radius: 20px;
                 margin: 10px;
             }
@@ -182,39 +187,47 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 10px;
+        margin: 20px 0;
     }
     .comentarios-item {
         padding: 20px;
-        background-color: map-get($colores, Violeta);
+        background: linear-gradient(to bottom, #242c5c %100, #494c77 %60);
         border: 2px transparent;
         border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px;
+        margin: 40px;
+        max-width: 500px;
+        position: relative;
         h6 {
             color: #fff;
-            margin: 0;
+            line-height: 25px;
+            font-weight: lighter;
         }
         p {
-            width: 250px;
             font-size: small;
             color: #fff;
-            font-style: italic;
             padding: 10px;
-            .empresa {
-                font-size: small;
-                color: #fff;
-                padding: 0;
-                margin: 0;
-            }
         }
         img {
-            width: 75px;
-            height: 75px;
-            border-radius: 50px;
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
             margin: 10px;
+            border: 2px solid map-get($colores, Amarillo);
+            &.lg {
+                position:absolute;
+                top: 90px;
+                left: 370px;
+            }
+            &.md {
+                position:absolute;
+                top: 140px;
+                left: 310px;
+            }
+            &.sm {
+                position:absolute;
+                top: 200px;
+                left: 200px;
+            }
         }
     }
 }

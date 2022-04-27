@@ -58,7 +58,7 @@ header .menu .sesion:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 0;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
@@ -178,6 +178,7 @@ header .menu .sesion:hover {
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 #subinicio .subinicio-titulo {
@@ -214,7 +215,7 @@ header .menu .sesion:hover {
 /* PRECIOS */
 #precios {
   text-align: center;
-  padding: 20px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,10 +229,15 @@ header .menu .sesion:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #fadc3e;
 }
 
 #precios h1 {
   margin: 20px 0px;
+}
+
+#precios .amarillo {
+  background-color: #fadc3e;
 }
 
 #precios .planes {
@@ -260,7 +266,7 @@ header .menu .sesion:hover {
 #precios .planes div:hover {
   width: 260px;
   height: 260px;
-  border: 2px solid #fadc3e;
+  border: 2px solid #242c5c;
   border-radius: 20px;
   margin: 10px;
 }
@@ -334,51 +340,56 @@ header .menu .sesion:hover {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 10px;
+  margin: 20px 0;
 }
 
 #usuarios .comentarios-item {
   padding: 20px;
-  background-color: #494c77;
+  background: -webkit-gradient(linear, left top, left bottom, from(#242c5c), to(#0d103b));
+  background: linear-gradient(to bottom, #242c5c, #0d103b);
   border: 2px transparent;
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 20px;
+  margin: 40px;
+  max-width: 500px;
+  position: relative;
 }
 
 #usuarios .comentarios-item h6 {
   color: #fff;
-  margin: 0;
+  line-height: 25px;
+  font-weight: lighter;
 }
 
 #usuarios .comentarios-item p {
-  width: 250px;
   font-size: small;
   color: #fff;
-  font-style: italic;
   padding: 10px;
 }
 
-#usuarios .comentarios-item p .empresa {
-  font-size: small;
-  color: #fff;
-  padding: 0;
-  margin: 0;
+#usuarios .comentarios-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin: 10px;
+  border: 2px solid #fadc3e;
 }
 
-#usuarios .comentarios-item img {
-  width: 75px;
-  height: 75px;
-  border-radius: 50px;
-  margin: 10px;
+#usuarios .comentarios-item img.lg {
+  position: absolute;
+  top: 90px;
+  left: 370px;
+}
+
+#usuarios .comentarios-item img.md {
+  position: absolute;
+  top: 140px;
+  left: 310px;
+}
+
+#usuarios .comentarios-item img.sm {
+  position: absolute;
+  top: 200px;
+  left: 200px;
 }
 
 /* FLECHAS DESPLAZAMIENTO */
@@ -548,7 +559,7 @@ header .menu .sesion:hover {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 #enlaces div a {
@@ -819,7 +830,7 @@ header .menu .sesion:hover {
       -ms-flex-align: center;
           align-items: center;
   gap: 40px;
-  margin-top: 20px;
+  margin: 50px 0;
 }
 
 .articulos h4 {
@@ -911,6 +922,7 @@ header .menu .sesion:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 50px 0;
 }
 
 .equipo #equipo-grid {
@@ -1056,13 +1068,21 @@ header .menu .sesion:hover {
     width: 250px;
     height: auto;
   }
-  .comentarios div.comentarios-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 250px;
-    height: auto;
+  .comentarios-item {
+    width: 300px;
+    height: 300px;
+  }
+  .comentarios-item h6 {
+    margin-top: 10px;
+  }
+  .comentarios-item img.lg {
+    display: none;
+  }
+  .comentarios-item img.md {
+    display: none;
+  }
+  .comentarios-item img.sm {
+    display: block;
   }
   .login {
     height: 60vh;
@@ -1173,13 +1193,20 @@ header .menu .sesion:hover {
     width: 400px;
     height: auto;
   }
-  .comentarios div.comentarios-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 300px;
-    width: 300PX;
+  .comentarios-item {
+    width: 400px;
+    height: auto;
+  }
+  .comentarios-item img.lg {
+    display: none;
+  }
+  .comentarios-item img.md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .comentarios-item img.sm {
+    display: none;
   }
   .login {
     height: 60vh;
@@ -1263,6 +1290,20 @@ header .menu .sesion:hover {
   }
   .derechos .redes {
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1920px) {
+  .comentarios-item img.lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .comentarios-item img.md {
+    display: none;
+  }
+  .comentarios-item img.sm {
+    display: none;
   }
 }
 
