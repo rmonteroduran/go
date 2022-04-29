@@ -52,6 +52,30 @@
         }
     }
 }
+.donde-estamos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($colores, Amarillo);
+    gap: 50px;
+    flex-wrap: wrap;
+    .ubicacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        .datos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
 
 
 
