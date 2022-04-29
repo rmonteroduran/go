@@ -388,8 +388,8 @@ header .menu .sesion:hover {
 
 #usuarios .comentarios-item img.sm {
   position: absolute;
-  top: 230px;
-  left: 65px;
+  top: 280px;
+  left: 40px;
 }
 
 /* FLECHAS DESPLAZAMIENTO */
@@ -1155,8 +1155,8 @@ header .menu .sesion:hover {
     margin-bottom: 20px;
   }
   #usuarios .comentarios .comentarios-item {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
     margin: 60px 0;
   }
   #usuarios .comentarios .comentarios-item h6 {
