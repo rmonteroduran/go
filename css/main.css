@@ -236,10 +236,6 @@ header .menu .sesion:hover {
   margin: 20px 0px;
 }
 
-#precios .amarillo {
-  background-color: #fadc3e;
-}
-
 #precios .planes {
   text-align: center;
   display: -webkit-box;

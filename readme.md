@@ -1,5 +1,13 @@
 #CoderHouse Desarrollo Web Comision 36545 Rodrigo Montero Duran
 
+##Actualización Tercera entrega de proyecto final
+
+- Index: Se agrega background amarillo en sección de precios, se modifica diseño de comentarios.
+- Contacto: Se agrega iframe google maps con ubicacion y datos de contacto.
+- Sobre GO!: Se agrega background amarillo en grid de equipo.
+- Footer: Cambio de diseño. Se separa en otra sección los enlaces a sobre go!, ayuda y comentarios.
+- Responsive: Ajustes en vistas mobile.
+
 ##Actualización Desafío SASS II + SEO
 
 - Mapa: Se Agrega mapa de colores en _vars.scss y se invoca en todo el proyecto con map-get.
