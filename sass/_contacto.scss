@@ -18,6 +18,16 @@
         align-items: center;
         justify-content: center;
         margin-top: 0;
+        textarea {
+            width: 300px;
+            border: none;
+            border: 2px solid map-get($colores, Violeta);
+            background-color: transparent;
+            color: map-get($colores, Violeta);
+            font-family: $tipografia;
+            font-size: medium;
+            margin: 10px 0;
+        }
         input {
             width: 300px;
             border: none;
@@ -43,7 +53,8 @@
                 overflow: hidden;
                 border: 2px transparent;
                 color: #fff;
-                transition: all 1s;   
+                transition: all 1s;
+                margin: 30px 0;   
                 &:hover {
                     background: map-get($colores, Amarillo);
                     color: map-get($colores, Violeta);
@@ -72,6 +83,9 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+            h5 {
+                margin-top: 20px;
+            }
         }
     }
 }

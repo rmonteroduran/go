@@ -21,6 +21,9 @@
             width: 300px;
         }
     }
+    i {
+        color: map-get($colores, Violeta);
+    }
 }
 .articulos  {
     text-align: center;

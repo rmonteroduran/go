@@ -674,6 +674,17 @@ header .menu .sesion:hover {
   margin-top: 0;
 }
 
+.contacto fieldset textarea {
+  width: 300px;
+  border: none;
+  border: 2px solid #494c77;
+  background-color: transparent;
+  color: #494c77;
+  font-family: "Roboto Mono", monospace;
+  font-size: medium;
+  margin: 10px 0;
+}
+
 .contacto fieldset input {
   width: 300px;
   border: none;
@@ -703,6 +714,7 @@ header .menu .sesion:hover {
   color: #fff;
   -webkit-transition: all 1s;
   transition: all 1s;
+  margin: 30px 0;
 }
 
 .contacto fieldset input.enviar:hover {
@@ -761,6 +773,10 @@ header .menu .sesion:hover {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.donde-estamos .ubicacion .datos h5 {
+  margin-top: 20px;
 }
 
 /*  LOGIN */
@@ -900,6 +916,10 @@ header .menu .sesion:hover {
   width: 300px;
 }
 
+.buscar i {
+  color: #494c77;
+}
+
 .articulos {
   text-align: center;
   display: -webkit-box;
@@ -978,6 +998,7 @@ header .menu .sesion:hover {
 
 .acerca div p {
   text-align: justify;
+  margin-top: 30px;
 }
 
 .equipo {
@@ -1080,6 +1101,11 @@ header .menu .sesion:hover {
 
 .equipo #equipo-grid .nombre-mobile {
   display: none;
+}
+
+.aviso {
+  text-align: center;
+  margin: 270px 0;
 }
 
 /* RESPONSIVE */
