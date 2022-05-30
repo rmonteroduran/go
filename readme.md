@@ -1,10 +1,13 @@
-#CoderHouse Desarrollo Web Comision 36545 Rodrigo Montero Duran
+## <img src="https://user-images.githubusercontent.com/103367542/170897064-db2db840-0d26-402a-b3bc-3c3f27df5f4f.png" width="35"> Coderhouse
+## <img src="https://user-images.githubusercontent.com/103367542/170894395-1b4856d1-dddb-44a6-988b-f467a48d8081.png" width="35"> Desarrollo Web
+## 🏫 Comisión 36545
+## 👨🏻‍🎓 Rodrigo Montero Durán
 
-##Actualización entrega Final
+### ✏️ Actualización entrega Final
 
 - Contacto: Se agrega servicio https://formsubmit.co/ para envio de formulario de contacto.
 
-##Actualización Tercera entrega de proyecto final
+### ✏️ Actualización Tercera entrega de proyecto final
 
 - Index: Se agrega background amarillo en sección de precios, se modifica diseño de comentarios.
 - Contacto: Se agrega iframe google maps con ubicacion y datos de contacto.
@@ -12,7 +15,7 @@
 - Footer: Cambio de diseño. Se separa en otra sección los enlaces a sobre go!, ayuda y comentarios.
 - Responsive: Ajustes en vistas mobile.
 
-##Actualización Desafío SASS II + SEO
+### ✏️ Actualización Desafío SASS II + SEO
 
 - Mapa: Se Agrega mapa de colores en _vars.scss y se invoca en todo el proyecto con map-get.
 - Extend: Se extiende clase .round en index.html y se modifica invirtiendo sentido de flechas de desplazamiento.
